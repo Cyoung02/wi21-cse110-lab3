@@ -1,21 +1,211 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>title</title>
+    <title>My website</title>
     <meta author="Colin Young" />
-    <link />
+    <link href="stylesheet.css" rel="stylesheet" />
   </head>
+  <nav>
+    <a href="#aboutme">About Me</a> | <a href="#currpos">Current Position</a> |
+    <a href="#goals">Goals</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+  <header>
+    <h1>Colin Young</h1>
+  </header>
   <body>
     <main>
-      <img
-        src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/118740838_2809048605983041_8846018679599177586_o.jpg?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_ohc=uWmHRv5rK_gAX95EkX0&_nc_ht=scontent-lax3-2.xx&oh=3ed0bb57e0d157801c65669d57e1471a&oe=601BE1F1"
-        alt=""
-      />
-      <h1>Colin Young</h1>
-      <h2>About me</h2>
-      <h3>My Favorite Artists</h3>
-      <h2>Current Position</h2>
-      <h3>UCSD Moshiri Lab</h3>
+      <figure>
+        <picture>
+          <source
+            srcset="
+              https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/12365994_1737976363090276_4854816059727631493_o.jpg?_nc_cat=107&ccb=2&_nc_sid=174925&_nc_ohc=ws1_NkzdPT4AX-SRm4a&_nc_ht=scontent-lax3-2.xx&oh=e1edfc86ec902bce10f5d3e854de6186&oe=6024C184
+            "
+            media="(max-width: 500px)"
+          />
+          <img
+            src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/118740838_2809048605983041_8846018679599177586_o.jpg?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_ohc=uWmHRv5rK_gAX95EkX0&_nc_ht=scontent-lax3-2.xx&oh=3ed0bb57e0d157801c65669d57e1471a&oe=601BE1F1"
+            style="width: 500px"
+          />
+        </picture>
+        <figcaption>This is me!</figcaption>
+      </figure>
+      <section>
+        <h2 id="aboutme">About me</h2>
+        Hi! I'm an undergraduate student at UCSD studying Computer Science. I
+        have experience scripting and developing tools for molecular
+        epidemiology research. You can find me on Linkedin
+        <a href="https://www.linkedin.com/in/cyoung02/">here</a>. When I'm not
+        coding, you'll catch me playing jazz saxophone and building mechanical
+        keyboards. Below is the original markdown website that this HTML version
+        was based off of:
+        <details>
+          <summary>Markdown Website</summary>
+          <iframe src="https://cyoung02.github.io/" width="50%"></iframe>
+        </details>
+        <h3>My Favorite Artists and Clips</h3>
+        <ol>
+          <li>Braxton Cook</li>
+          <audio src="media/Ooooo.mp3"></audio>
+          <li>Snarky Puppy</li>
+          <audio src="media/xavi.mp3"></audio>
+          <li>Chris Potter</li>
+          <audio src="media/rumples.mp3"></audio>
+          <li>Christian Scott</li>
+          <audio src="media/sunrise.mp3"></audio>
+          <li>Baptiste Herbin</li>
+          <audio src="media/parker.mp3"></audio>
+        </ol>
+        <video src="media/donnalee.mp4"></video>
+        <hr />
+      </section>
+      <section>
+        <h2 id="currpos">Current Position</h2>
+        <div>
+          <h3>UCSD Moshiri Lab</h3>
+          <em>Undergraduate Researcher</em>
+          <ul>
+            <aside>
+              <p>
+                The Moshiri Lab is a research lab run by professor Niema Moshiri
+                at UCSD. <br />
+                We focus on computational biology, particularly in the areas of
+                HIV phylogenetics and molecular epidemiology.
+              </p>
+            </aside>
+            <li>
+              First author on 2020 preprint
+              <a href="https://doi.org/10.1101/2020.11.24.396820"
+                >”An Evaluation of Phylogenetic Workflows in Viral Molecular
+                Epidemiology”</a
+              >
+              uploaded to bioRxiv and currently being peer reviewed for
+              publication in the
+              <i>Journal of Molecular Biology and Evolution</i>
+            </li>
+            <li>
+              You can see the repository with all the simulated sequence data
+              and corresponding phylogenetic inference workflows
+              <a
+                href="https://github.com/Cyoung02/Phylogenetic-Inference-Benchmarking"
+                >here</a
+              >
+            </li>
+            <li>
+              Led the creation of quantitative metrics to evaluate the
+              effectiveness of novel epidemiological tools and discovered an
+              alternate workflow that reduces computation time by over 95% with
+              no appreciable accuracy loss
+            </li>
+            <li>
+              Developing a web application with <span><b>ReactJS</b></span> and
+              <span><b>JavaScript</b></span> to perform transmission clustering
+              analyses on newick trees
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </section>
+      <section>
+        <h2 id="goals">Goals</h2>
+        <hr />
+      </section>
+      <section>
+        <h2 id="contact">Contact</h2>
+        <strong
+          >If you'd like my complete resume, feel free to reach out to me at
+          young.colin86@gmail.com</strong
+        >
+        <code>
+          <pre>
+            if (my_page.is_seen()) {
+              return with_job_offer("please");
+            }
+          </pre>
+        </code>
+        <form action="">
+          <div>
+            <label for="name"> Name:</label>
+            <input type="text" name="name" />
+          </div>
+          <div>
+            <label for="gender">Gender:</label>
+            <select name="gender">
+              <optgroup label="Binary">
+                <option>Male</option>
+                <option>Female</option>
+              </optgroup>
+              <optgroup label="Nonbinary">
+                <option>agender</option>
+                <option>fluid</option>
+                <option>other</option>
+              </optgroup>
+            </select>
+          </div>
+          <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" />
+          </div>
+          <div>
+            <label for="website">Personal Website:</label>
+            <input type="url" name="website" />
+          </div>
+          <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" />
+          </div>
+          <div>
+            <label for="email"> Email: </label>
+            <input type="email" name="email" />
+          </div>
+
+          <div>
+            <label for="favcolor"> Favorite Color: </label>
+            <input type="color" name="favcolor" />
+          </div>
+          <div>
+            <label for="favnumber"> Favorite Number: </label>
+            <input type="number" name="favnumber" />
+          </div>
+          <div>
+            <label for="artist-choice">Choose your favorite artist:</label>
+            <input list="artists" id="artist-choice" />
+            <datalist id="artists">
+              <option value="Braxton Cook"></option>
+              <option value="Snarky Puppy"></option>
+              <option value="Chris Potter"></option>
+              <option value="Christian Scott"></option>
+              <option value="Baptiste Herbin"></option>
+            </datalist>
+          </div>
+          <div>
+            <fieldset>
+              <legend>Reason for Contact</legend>
+              <input type="radio" id="support" />
+              <label for="support">Support</label>
+              <input type="radio" id="job" />
+              <label for="job">Job Offer</label>
+              <input type="radio" id="other" />
+              <label for="other">Other</label>
+            </fieldset>
+          </div>
+          <div>
+            <label for="message"> Message:</label>
+            <textarea name="message" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Send!" />
+          </div>
+          <div>
+            <input type="reset" value="reset all fields" />
+          </div>
+        </form>
+        <hr />
+      </section>
+      <button onClick="window.location.reload();">Refresh Page</button>
     </main>
   </body>
+  <footer>
+    <p>Author: Colin Young</p>
+  </footer>
 </html>
