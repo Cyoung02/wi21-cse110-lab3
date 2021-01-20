@@ -17,6 +17,30 @@ body {
   }
 }
 
+.parent {
+  display: flex;
+  height: 200px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.child {
+  width: 70%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1.title {
+  font-size: 50px;
+  margin: auto;
+  text-align: center;
+  text-decoration: underline;
+  color: purple;
+}
+
 /*
 Here's a comment to show that I know how to use comments
 */
