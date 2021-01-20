@@ -1,2 +1,41 @@
+* {
+}
+
 body {
+}
+
+h1.title {
+}
+
+/*
+Here's a comment to show that I know how to use comments
+*/
+
+#caption {
+}
+
+h1,
+h2,
+h3 {
+}
+
+h3 + em {
+}
+
+label ~ input {
+}
+
+section p {
+}
+
+ol > li {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+audio[controls] {
 }
